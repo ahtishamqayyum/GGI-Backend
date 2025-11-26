@@ -1,4 +1,4 @@
-import { SubscriptionBundle, BundleTier, BillingCycle } from '../entities/SubscriptionBundle';
+import { SubscriptionBundle, BundleTier, BillingCycle } from '../entities/subscription-bundle';
 
 export interface ISubscriptionBundleRepository {
   create(

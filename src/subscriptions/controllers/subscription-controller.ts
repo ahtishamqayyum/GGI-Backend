@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
-import { SubscriptionService } from '../services/SubscriptionService';
-import { AppError } from '../../domain/errors/AppError';
-import { BundleTier, BillingCycle } from '../../domain/entities/SubscriptionBundle';
+import { SubscriptionService } from '../services/subscription-service';
+import { AppError } from '../../domain/errors/app-error';
+import { BundleTier, BillingCycle } from '../../domain/entities/subscription-bundle';
 
 export class SubscriptionController {
   constructor(private subscriptionService: SubscriptionService) {}

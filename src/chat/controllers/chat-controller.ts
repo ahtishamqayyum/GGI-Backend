@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
-import { ChatService } from '../services/ChatService';
-import { AppError } from '../../domain/errors/AppError';
+import { ChatService } from '../services/chat-service';
+import { AppError } from '../../domain/errors/app-error';
 
 export class ChatController {
   constructor(private chatService: ChatService) {}

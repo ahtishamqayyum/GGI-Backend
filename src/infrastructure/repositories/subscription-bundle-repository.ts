@@ -1,6 +1,6 @@
-import { SubscriptionBundle, BundleTier, BillingCycle } from '../../domain/entities/SubscriptionBundle';
-import { ISubscriptionBundleRepository } from '../../domain/repositories/ISubscriptionBundleRepository';
-import { Database } from '../database/Database';
+import { SubscriptionBundle, BundleTier, BillingCycle } from '../../domain/entities/subscription-bundle';
+import { ISubscriptionBundleRepository } from '../../domain/repositories/i-subscription-bundle-repository';
+import { Database } from '../database/database';
 import { randomUUID } from 'crypto';
 
 export class SubscriptionBundleRepository implements ISubscriptionBundleRepository {

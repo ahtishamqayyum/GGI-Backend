@@ -1,4 +1,4 @@
-import { ChatMessage } from '../entities/ChatMessage';
+import { ChatMessage } from '../entities/chat-message';
 
 export interface IChatMessageRepository {
   create(message: Omit<ChatMessage, 'id' | 'createdAt'>): Promise<ChatMessage>;

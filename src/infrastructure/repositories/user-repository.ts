@@ -1,6 +1,6 @@
-import { User } from '../../domain/entities/User';
-import { IUserRepository } from '../../domain/repositories/IUserRepository';
-import { Database } from '../database/Database';
+import { User } from '../../domain/entities/user';
+import { IUserRepository } from '../../domain/repositories/i-user-repository';
+import { Database } from '../database/database';
 
 export class UserRepository implements IUserRepository {
   private db = Database.getInstance();

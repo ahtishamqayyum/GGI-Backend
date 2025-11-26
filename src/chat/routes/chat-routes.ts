@@ -1,10 +1,10 @@
 import { Router } from 'express';
-import { ChatController } from '../controllers/ChatController';
-import { ChatService } from '../services/ChatService';
-import { ChatMessageRepository } from '../../infrastructure/repositories/ChatMessageRepository';
-import { UserRepository } from '../../infrastructure/repositories/UserRepository';
-import { SubscriptionBundleRepository } from '../../infrastructure/repositories/SubscriptionBundleRepository';
-import { UserMonthlyUsageRepository } from '../../infrastructure/repositories/UserMonthlyUsageRepository';
+import { ChatController } from '../controllers/chat-controller';
+import { ChatService } from '../services/chat-service';
+import { ChatMessageRepository } from '../../infrastructure/repositories/chat-message-repository';
+import { UserRepository } from '../../infrastructure/repositories/user-repository';
+import { SubscriptionBundleRepository } from '../../infrastructure/repositories/subscription-bundle-repository';
+import { UserMonthlyUsageRepository } from '../../infrastructure/repositories/user-monthly-usage-repository';
 
 const router = Router();
 

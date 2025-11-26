@@ -1,10 +1,10 @@
-import { IChatMessageRepository } from '../../domain/repositories/IChatMessageRepository';
-import { IUserRepository } from '../../domain/repositories/IUserRepository';
-import { ISubscriptionBundleRepository } from '../../domain/repositories/ISubscriptionBundleRepository';
-import { IUserMonthlyUsageRepository } from '../../domain/repositories/IUserMonthlyUsageRepository';
-import { QuotaExceededError, NotFoundError } from '../../domain/errors/AppError';
-import { ChatMessage } from '../../domain/entities/ChatMessage';
-import { UserMonthlyUsage } from '../../domain/entities/UserMonthlyUsage';
+import { IChatMessageRepository } from '../../domain/repositories/i-chat-message-repository';
+import { IUserRepository } from '../../domain/repositories/i-user-repository';
+import { ISubscriptionBundleRepository } from '../../domain/repositories/i-subscription-bundle-repository';
+import { IUserMonthlyUsageRepository } from '../../domain/repositories/i-user-monthly-usage-repository';
+import { QuotaExceededError, NotFoundError } from '../../domain/errors/app-error';
+import { ChatMessage } from '../../domain/entities/chat-message';
+import { UserMonthlyUsage } from '../../domain/entities/user-monthly-usage';
 
 export interface ChatResponse {
   question: string;

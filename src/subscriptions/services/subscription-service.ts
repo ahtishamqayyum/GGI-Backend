@@ -1,7 +1,7 @@
-import { ISubscriptionBundleRepository } from '../../domain/repositories/ISubscriptionBundleRepository';
-import { IUserRepository } from '../../domain/repositories/IUserRepository';
-import { SubscriptionBundle, BundleTier, BillingCycle } from '../../domain/entities/SubscriptionBundle';
-import { NotFoundError, ValidationError } from '../../domain/errors/AppError';
+import { ISubscriptionBundleRepository } from '../../domain/repositories/i-subscription-bundle-repository';
+import { IUserRepository } from '../../domain/repositories/i-user-repository';
+import { SubscriptionBundle, BundleTier, BillingCycle } from '../../domain/entities/subscription-bundle';
+import { NotFoundError, ValidationError } from '../../domain/errors/app-error';
 import { addMonths, addYears, isBefore } from 'date-fns';
 
 export interface CreateSubscriptionDto {

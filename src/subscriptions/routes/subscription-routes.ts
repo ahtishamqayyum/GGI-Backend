@@ -1,8 +1,8 @@
 import { Router } from 'express';
-import { SubscriptionController } from '../controllers/SubscriptionController';
-import { SubscriptionService } from '../services/SubscriptionService';
-import { SubscriptionBundleRepository } from '../../infrastructure/repositories/SubscriptionBundleRepository';
-import { UserRepository } from '../../infrastructure/repositories/UserRepository';
+import { SubscriptionController } from '../controllers/subscription-controller';
+import { SubscriptionService } from '../services/subscription-service';
+import { SubscriptionBundleRepository } from '../../infrastructure/repositories/subscription-bundle-repository';
+import { UserRepository } from '../../infrastructure/repositories/user-repository';
 
 const router = Router();
 

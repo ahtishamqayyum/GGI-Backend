@@ -1,4 +1,4 @@
-import { UserMonthlyUsage } from '../entities/UserMonthlyUsage';
+import { UserMonthlyUsage } from '../entities/user-monthly-usage';
 
 export interface IUserMonthlyUsageRepository {
   findByUserIdAndMonth(

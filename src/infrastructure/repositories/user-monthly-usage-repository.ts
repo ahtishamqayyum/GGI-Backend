@@ -1,6 +1,6 @@
-import { UserMonthlyUsage } from '../../domain/entities/UserMonthlyUsage';
-import { IUserMonthlyUsageRepository } from '../../domain/repositories/IUserMonthlyUsageRepository';
-import { Database } from '../database/Database';
+import { UserMonthlyUsage } from '../../domain/entities/user-monthly-usage';
+import { IUserMonthlyUsageRepository } from '../../domain/repositories/i-user-monthly-usage-repository';
+import { Database } from '../database/database';
 import { randomUUID } from 'crypto';
 
 export class UserMonthlyUsageRepository implements IUserMonthlyUsageRepository {

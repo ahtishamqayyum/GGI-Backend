@@ -3,9 +3,9 @@ import cors from 'cors';
 import helmet from 'helmet';
 import 'express-async-errors';
 import dotenv from 'dotenv';
-import chatRoutes from './chat/routes/chatRoutes';
-import subscriptionRoutes from './subscriptions/routes/subscriptionRoutes';
-import { AppError } from './domain/errors/AppError';
+import chatRoutes from './chat/routes/chat-routes';
+import subscriptionRoutes from './subscriptions/routes/subscription-routes';
+import { AppError } from './domain/errors/app-error';
 
 dotenv.config();
 

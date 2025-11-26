@@ -1,6 +1,6 @@
-import { ChatMessage } from '../../domain/entities/ChatMessage';
-import { IChatMessageRepository } from '../../domain/repositories/IChatMessageRepository';
-import { Database } from '../database/Database';
+import { ChatMessage } from '../../domain/entities/chat-message';
+import { IChatMessageRepository } from '../../domain/repositories/i-chat-message-repository';
+import { Database } from '../database/database';
 import { randomUUID } from 'crypto';
 
 export class ChatMessageRepository implements IChatMessageRepository {
