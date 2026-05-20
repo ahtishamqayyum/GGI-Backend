@@ -55,8 +55,8 @@ Before you begin, ensure you have the following installed:
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd GGI-Backend-Test-Posture
+   git clone https://github.com/ahtishamqayyum/GGI-Backend.git
+   cd GGI-Backend
    ```
 
 2. **Install dependencies**
@@ -156,6 +156,7 @@ GET /health
 ```json
 {
   "status": "ok",
+  "service": "ggi-backend",
   "timestamp": "2024-01-01T00:00:00.000Z"
 }
 ```
