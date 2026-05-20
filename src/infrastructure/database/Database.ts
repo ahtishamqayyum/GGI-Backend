@@ -3,6 +3,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
+// Singleton PostgreSQL connection pool for the application
 export class Database {
   private static instance: Database;
   private pool: Pool;
@@ -20,6 +21,7 @@ export class Database {
     });
   }
 
+  // Returns the shared Database instance (lazy-initialized)
   public static getInstance(): Database {
     if (!Database.instance) {
       Database.instance = new Database();
