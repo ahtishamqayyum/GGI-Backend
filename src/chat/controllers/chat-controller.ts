@@ -2,6 +2,7 @@ import { Request, Response } from 'express';
 import { ChatService } from '../services/chat-service';
 import { AppError } from '../../domain/errors/app-error';
 
+// HTTP handlers for chat message send and history retrieval
 export class ChatController {
   constructor(private chatService: ChatService) {}
 
@@ -45,6 +46,7 @@ export class ChatController {
     }
   }
 
+  // Maps domain errors to API JSON responses
   private handleError(error: unknown, res: Response): void {
     if (error instanceof AppError) {
       res.status(error.statusCode).json({
